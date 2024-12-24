@@ -1,0 +1,14 @@
+{
+  "app_name": "نوتا",
+  "add_note": "أضف ملاحظة",
+  "my_notes": "ملاحظاتي",
+  "edit": "تعديل",
+  "delete": "حذف",
+  "update_note": "تحديث الملاحظة",
+  "write_your_note": "اكتب ملاحظتك",
+  "delete_note_confirmation": "هل أنت متأكد أنك تريد حذف هذه الملاحظة؟",
+  "cancel": "إلغاء",
+  "settings": "الإعدادات",
+  "dark_theme": "الوضع المظلم",
+  "language": "اللغة"
+}

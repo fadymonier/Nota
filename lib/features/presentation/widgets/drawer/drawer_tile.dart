@@ -5,7 +5,7 @@ import 'package:google_fonts/google_fonts.dart';
 class DrawerTile extends StatelessWidget {
   final String title;
   final Widget leading;
-  final void Function()? onTap;
+  final void Function() onTap;
   const DrawerTile(
       {super.key,
       required this.title,

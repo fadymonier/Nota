@@ -10,21 +10,23 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await CacheHelper.init();
   await NoteDatabase.initialize();
+
   runApp(
-    MultiProvider(providers: [
-      ChangeNotifierProvider(
-        create: (context) => NoteDatabase(),
-      ),
-      ChangeNotifierProvider(create: (context) => ThemeProvider()),
-      ChangeNotifierProvider(
-        create: (context) => CachedTheme(),
-      ),
-    ], child: const MyApp()),
+    MultiProvider(
+      providers: [
+        ChangeNotifierProvider(
+          create: (context) => NoteDatabase(),
+        ),
+        ChangeNotifierProvider(create: (context) => ThemeProvider()),
+        ChangeNotifierProvider(create: (context) => CachedTheme()),
+      ],
+      child: const Nota(),
+    ),
   );
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class Nota extends StatelessWidget {
+  const Nota({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -33,6 +35,7 @@ class MyApp extends StatelessWidget {
       minTextAdapt: true,
       splitScreenMode: true,
       builder: (context, child) => MaterialApp(
+        themeMode: ThemeMode.system,
         debugShowCheckedModeBanner: false,
         theme: Provider.of<ThemeProvider>(context).themeData,
         home: const NotesPage(),

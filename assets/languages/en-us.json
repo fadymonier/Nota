@@ -1,0 +1,16 @@
+{
+  "nota": "Nota",
+  "my_notes": "My Notes",
+  "add_your_note_here": "Add your note here",
+  "new_note": "New Note",
+  "update_note": "Update Note",
+  "update": "Update",
+  "delete_note": "Delete Note",
+  "are_you_sure_delete": "Are you sure you want to delete this note?",
+  "delete": "Delete",
+  "cancel": "Cancel",
+  "settings": "Settings",
+  "dark_theme": "Dark Theme",
+  "language": "Language",
+  "back_to_notes": "Back to Notes"
+}
