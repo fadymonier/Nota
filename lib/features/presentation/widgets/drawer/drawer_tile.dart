@@ -21,6 +21,7 @@ class DrawerTile extends StatelessWidget {
           title,
           style: GoogleFonts.patrickHandSc(
               fontSize: 20.sp,
+              fontWeight: FontWeight.w600,
               color: Theme.of(context).colorScheme.inversePrimary),
         ),
         leading: leading,
